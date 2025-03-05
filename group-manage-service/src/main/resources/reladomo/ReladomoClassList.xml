@@ -1,4 +1,4 @@
 <Mithra>
-    <MithraObjectResource name="Department"/>
-    <MithraObjectResource name="Employee"/>
+    <MithraObjectResource name="Room"/>
+    <MithraObjectResource name="Participant"/>
 </Mithra>

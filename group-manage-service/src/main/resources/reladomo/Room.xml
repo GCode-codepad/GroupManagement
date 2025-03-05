@@ -1,0 +1,16 @@
+<MithraObject objectType="transactional">
+    <PackageName>org.example.groupmanageservice.domain</PackageName>
+    <ClassName>Room</ClassName>
+    <DefaultTable>ROOMS</DefaultTable>
+
+    
+    <Attribute name="roomId" primaryKey="true" columnName="ROOM_ID" javaType="String"/>
+    <Attribute name="hosterUserId" columnName="HOSTER_USER_ID" javaType="String"/>
+    <Attribute name="joinPassword" columnName="JOIN_PASSWORD" javaType="String"/>
+    <Attribute name="status" columnName="STATUS" javaType="String"/>
+
+    
+    <Relationship name="participants" relatedObject="Participant" cardinality="one-to-many" >
+        Participant.roomId = this.roomId
+    </Relationship>
+</MithraObject>

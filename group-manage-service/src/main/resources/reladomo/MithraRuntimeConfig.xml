@@ -1,0 +1,6 @@
+<MithraRuntime>
+  <ConnectionManager className="org.example.groupmanageservice.config.ReladomoConnectionManager">
+    <MithraObjectConfiguration className="org.example.groupmanageservice.domain.Room" cacheType="partial"/>
+    <MithraObjectConfiguration className="org.example.groupmanageservice.domain.Participant" cacheType="partial"/>
+  </ConnectionManager>
+</MithraRuntime>

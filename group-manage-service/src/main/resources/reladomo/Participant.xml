@@ -1,0 +1,8 @@
+<MithraObject objectType="transactional">
+    <PackageName>org.example.groupmanageservice.domain</PackageName>
+    <ClassName>Participant</ClassName>
+    <DefaultTable>PARTICIPANTS</DefaultTable>
+
+    <Attribute name="userId" columnName="USER_ID" primaryKey="true" javaType="String"/>
+    <Attribute name="roomId" columnName="ROOM_ID" primaryKey="true" javaType="String"/>
+</MithraObject>
