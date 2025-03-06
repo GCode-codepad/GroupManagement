@@ -5,4 +5,7 @@
 
     <Attribute name="userId" columnName="USER_ID" primaryKey="true" javaType="String"/>
     <Attribute name="roomId" columnName="ROOM_ID" primaryKey="true" javaType="String"/>
+    
+    <!--  store json string -->
+    <Attribute name="permissions" columnName="PERMISSIONS" javaType="String"/> 
 </MithraObject>
