@@ -5,7 +5,7 @@ import com.gs.fw.common.mithra.bulkloader.BulkLoader;
 import com.gs.fw.common.mithra.bulkloader.BulkLoaderException;
 import com.gs.fw.common.mithra.connectionmanager.SourcelessConnectionManager;
 import com.gs.fw.common.mithra.databasetype.DatabaseType;
-import com.gs.fw.common.mithra.databasetype.PostgresDatabaseType;
+import com.gs.fw.common.mithra.databasetype.MariaDatabaseType;
 
 import java.util.Properties;
 import java.util.TimeZone;
@@ -79,7 +79,7 @@ public class ReladomoConnectionManager implements SourcelessConnectionManager
 
     public DatabaseType getDatabaseType()
     {
-        return PostgresDatabaseType.getInstance();
+        return MariaDatabaseType.getInstance();
     }
 
     public TimeZone getDatabaseTimeZone()

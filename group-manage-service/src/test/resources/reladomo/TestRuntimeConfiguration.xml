@@ -1,0 +1,7 @@
+<MithraRuntime>
+  <ConnectionManager className="com.gs.fw.common.mithra.test.ConnectionManagerForTests" source="test_db">
+    <Property name="testResource" value="test_db"/>
+    <MithraObjectConfiguration className="org.example.groupmanageservice.domain.Room" cacheType="partial"/>
+    <MithraObjectConfiguration className="org.example.groupmanageservice.domain.Participant" cacheType="partial"/>
+  </ConnectionManager>
+</MithraRuntime>

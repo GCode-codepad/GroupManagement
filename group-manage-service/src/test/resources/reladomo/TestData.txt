@@ -1,0 +1,8 @@
+class org.example.groupmanageservice.domain.Room
+roomId, hosterUserId, joinPassword, status
+"739dc92a-30c1-49be-95ff-2b8bb1ec1282", "62674e84-4e68-4416-88b6-ef09e7352d07", "8a80b6c8", "open"
+
+class org.example.groupmanageservice.domain.Participant
+userId, roomId, permissions
+"62674e84-4e68-4416-88b6-ef09e7352d07", "739dc92a-30c1-49be-95ff-2b8bb1ec1282", ""
+"76c34155-9e4f-4c38-a080-fc4c84d0706c", "739dc92a-30c1-49be-95ff-2b8bb1ec1282", ""
