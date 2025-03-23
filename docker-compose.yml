@@ -93,6 +93,17 @@ services:
     ports:
       - "3000:3000"
 
+  nginx:
+    image: nginx:stable
+    container_name: nginx_https
+    depends_on:
+      - gateway-layer
+    volumes:
+      - ./nginx/conf.d:/etc/nginx/conf.d:ro
+      - ./nginx/certs:/etc/nginx/certs:ro
+    ports: [ "80:80","443:443" ]
+    networks: [ app-network ]
+
 networks:
   app-network:
     driver: bridge
